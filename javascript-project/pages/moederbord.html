@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Moederbord</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet"> <!-- google font -->
+
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css"> <!-- css -->
+	<script src="../js/javascript.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper" class="moederbord">
+		<div class="menu">
+		 <a href="../index.html">home</a><a class="active" href="moederbord.html">moederbord</a><a href="harddisk.html">harddisk</a>
+		</div>
+	
+    <section onLoad="MM_preloadImages('../images/moederbord/moederbord.jpg')">
+		
+		<div id="imageMap">	  
+		<img id="koe" src="../images/moederbord/moederbord.jpg" alt="moederbord" usemap="#koe" hidefocus="true"/>
+  		<map name="koe">
+    		<area shape="rect" coords="297,55,374,134" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/moederbord/cpu.jpg',1); cpu(); return false;">
+    		    	
+    		<area shape="poly" coords="335,250,282,195,336,140,391,196" href="javascript:void(0)"
+   	    	onMouseOver="MM_swapImage('koe','','../images/moederbord/gpu-1.jpg',1); gpu_1(); return false;">
+    	    	
+    		<area shape="poly" coords="218,232,218,296,282,294,281,232" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/moederbord/gpu-2.jpg',1); gpu_2(); return false;">
+    	
+    		<area shape="poly" coords="59,276,54,268,54,200,50,138,49,68,15,65,14,326,60,325" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/moederbord/hubs.jpg',1); hubs(); return false;">
+    	
+    		<area shape="poly" coords="514,350,512,268,355,268,353,297,344,298,341,330,351,331,352,348,364,347,360,308,507,308,504,347" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/moederbord/ram-slot.jpg',1); ram_slot(); return false;">
+    	<!-- onMouseOut="MM_swapImgRestore()" -->
+  		</map>
+  		<div class="resetWrapper">
+  			<a id="reset" href="javascript:void(0)"
+  			onClick="MM_swapImage('koe','','../images/moederbord/moederbord.jpg',1); reset_moederbord(); return false;">Reset</a>
+  		</div>
+		</div>
+		
+		<div id="content">
+			<h2 id="titel">Moederbord</h2>
+			<p id="text">Beweeg over één van de stukken van het moederbord voor meer informatie.</p>
+			<footer>Tekst: Wikipedia.nl</footer>
+		</div>
+	</section>
+	</div>
+
+</body>
+</html>

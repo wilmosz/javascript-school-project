@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Harddisk</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet"> <!-- google font -->
+
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css"> <!-- css -->
+	<script src="../js/javascript.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper" class="harddisk">
+		<div class="menu">
+		 <a href="../index.html">home</a><a href="moederbord.html">moederbord</a><a class="active" href="harddisk.html">harddisk</a>
+		</div>
+	
+    <section onLoad="MM_preloadImages('../images/harddisk/harddisk.jpg')">
+		
+		<div id="imageMap">	  
+		<img id="koe" src="../images/harddisk/harddisk.jpg" alt="harddisk" usemap="#koe" hidefocus="true"/>
+  		<map name="koe">
+    		<area shape="poly" coords="77,31,30,61,32,71,24,80,26,167,26,199,30,201,30,208,74,209,79,182,84,173,84,148,95,132,118,116,138,114,163,113,180,112,187,103,179,93,185,83,197,65,194,54,192,39,176,35,159,24,155,42,142,45,130,52,106,52,105,23,88,22" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/harddisk/actuator.jpg',1); actuator(); return false;">
+    		    	
+    		<area shape="poly" coords="141,120,103,131,89,150,111,194,106,199,136,251,148,293,158,299,174,331,180,348,186,346,183,330,182,304,177,287,179,283,165,232,162,194,165,171,162,137" href="javascript:void(0)"
+   	    	onMouseOver="MM_swapImage('koe','','../images/harddisk/actuator-arm.jpg',1); actuator_arm(); return false;">
+    	    	
+    		<area shape="circle" coords="343,199,178" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/harddisk/platter-spindle.jpg',1); platter_spindle(); return false;">
+    	
+    		<area shape="poly" coords="558,50,534,50,532,350,559,349" href="javascript:void(0)"
+    		onMouseOver="MM_swapImage('koe','','../images/harddisk/jumper-sata-power-conector.jpg',1); jumper_sata_power_conector(); return false;">
+  		</map>
+  		<div class="resetWrapper">
+  			<a id="reset" href="javascript:void(0)"
+  			onClick="MM_swapImage('koe','','../images/harddisk/harddisk.jpg',1); reset_harddisk(); return false;">Reset</a>
+  		</div>
+	  </div>
+		
+		<div id="content">
+			<h2 id="titel">Harddisk</h2>
+			<p id="text">Beweeg over één van de stukken van de harddisk voor meer informatie.</p>
+			<footer>Tekst: Wikipedia.nl</footer>
+		</div>
+	</section>
+	</div>
+
+</body>
+</html>
