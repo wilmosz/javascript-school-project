@@ -1,1 +1,1 @@
-# test
+JavaScript school project 
